@@ -41,3 +41,13 @@ git commit -m "Describe your changes"
 
 ```
 
+## 7. git push 
+
+Send your local commits to the remote repository
+
+```bash
+git push origin main
+
+```
+
+
