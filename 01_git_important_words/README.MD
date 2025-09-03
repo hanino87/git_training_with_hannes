@@ -13,7 +13,7 @@ git clone <repository-url>
 ```
 
 ## 2. `git pull`
-Update your local branch with the latest changes from the remote.
+Update your local branch with the latest changes from the remote main bransch.
 
 ```bash
 git pull origin main
