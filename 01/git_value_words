@@ -8,3 +8,7 @@ This guide explains essential Git commands and concepts in simple terms.
 Create a copy of a remote repository on your computer.
 ```bash
 git clone <repository-url>
+
+## 2. `git pull`
+Update your local branch with the latest changes from the remote.
+git pull origin main
