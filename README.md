@@ -120,7 +120,7 @@ git rebase --continue
 - Run `git status` often to check where you are.  
 - Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
 - Use `git stash` when unsure instead of risking `git reset --hard`.
-- do git reset --hard orgin main to avoid deleteing uncommited changes in oter local branches that havent been commited yet.
+- If you want to use `git reset --hard` check in which branch you are on. If you for example have uncommited changes in a local bransch do not do `git reset --hard` in that bransch. Then you lost all uncommited changes in that branch. 
 
 
 
