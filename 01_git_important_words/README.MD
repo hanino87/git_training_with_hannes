@@ -50,4 +50,38 @@ git push origin main
 
 ```
 
+## 8. git stash 
+
+Temporarily save uncommitted changes to switch tasks safely. 
+
+```bash
+
+git stash
+git stash pop  # restore later
+
+```
+
+## 9. git merge 
+
+Combine changes from another branch into your current branch.
+
+```bash
+git checkout main
+git merge feature-branch
+```
+## 10. Fork
+
+A personal copy of someone else’s repository to make changes safely. 
+
+## 11. repo 
+
+Shortname for respitory 
+
+## 12. Branch
+A separate line of development. Useful for working on new features safely.
+
+```bash
+git checkout -b feature-branch # create and switch to a new bransch 
+git checkout main # switch to an existing branch 
+```
 
