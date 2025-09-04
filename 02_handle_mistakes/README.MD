@@ -100,7 +100,7 @@ If you accidentally run `git clone` inside an existing Git repository, you end u
 git branch 
 git checkout main
 git pull # use when you have not do forking and want latest changes from your main repo into your local main repo
-git pull classrepo main # use if you want the latest changes from the original remote repo to your local fork. 
+git pull classrepo main # use if you want the latest changes from the original remote repo to your local fork 
 ```
 
 ---
