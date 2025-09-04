@@ -3,12 +3,13 @@
 Git can feel unforgiving at times, but almost everything can be recovered.  
 Here are some common mistakes and how to solve them.
 
-# Tips to Avoid These Mistakes
+# Tips to Avoid Mistakes
 
 - Run `git status` often to check where you are.  
 - Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
 - Use `git stash` when unsure of you want saving changes or not. 
-- Checkt which branch you are in always. 
+- Checkt which branch you are in always to avoid that you are in wrong bracnh 
+- Always when you start working do git pull in your local main branch to allways be in sync to the remote main branch. 
 
 ```bash
 
@@ -17,7 +18,7 @@ git branch
 ```
 ---
 
-## 2. You made changes in the wrong branch and want to discard uncommitted changes to switch branches
+## 1. You made changes in the wrong branch and want to discard uncommitted changes to switch branches
 Git won’t let you switch branches if you have uncommitted changes.
 
 **Solution save changes temporarily:**
@@ -29,7 +30,7 @@ git stash pop   # if you want to re-apply them
 
 ---
 
-## 3. Undo a commit
+## 2. Undo a commit
 
 Different cases depending on whether you pushed or not:
 
@@ -46,7 +47,7 @@ git revert <commit-hash>
 
 ---
 
-## 4. You have 1000+ changed files but only want to commit 3 specific ones to GitHub
+## 3. You have 1000+ changed files but only want to commit 3 specific ones to GitHub
 You can stage and commit only the files you want.
 
 **Solution:**
@@ -64,7 +65,7 @@ git push origin your-branch
 👉 The other files remain uncommitted in your working directory.
 
 
-## 5. Merge conflict between local `main` and remote `main` (branches have diverged)
+## 4. Merge conflict between local `main` and remote `main` (branches have diverged)
 This happens when both your local `main` and the remote `main` have commits that the other doesn’t.  
 Git will stop you from switching branches until the conflict is resolved.
 
@@ -77,7 +78,7 @@ git reset --hard origin/main
 
 👉 Once resolved, you can safely switch branches locally.
 
-## 6. Mistake: Cloning a Git or fork a repository inside another Git repository
+## 5. Mistake: Cloning a Git or fork a repository inside another Git repository
 
 If you accidentally run `git clone` inside an existing Git repository, you end up with a nested Git repository. This can cause confusion with version control, because Git will see the inner repo as a subdirectory but not automatically track it properly.
 
@@ -90,9 +91,6 @@ If you accidentally run `git clone` inside an existing Git repository, you end u
 
 ---
 
-# Tips to Avoid These Mistakes
-- Run `git status` often to check where you are.  
-- Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
-- Use `git stash` when unsure of what you want to change in your current branch. 
+
 
 ---
