@@ -95,6 +95,18 @@ git reset --hard origin/main
 
 👉 Once resolved, you can safely switch branches locally.
 
+## 6. Mistake: Cloning a Git repository inside another Git repository
+
+If you accidentally run `git clone` inside an existing Git repository, you end up with a nested Git repository. This can cause confusion with version control, because Git will see the inner repo as a subdirectory but not automatically track it properly.
+
+### How to avoid or fix it:
+
+1. **Avoid nesting**: Always clone repositories in a separate folder outside any existing Git repo.
+2. **Move the nested repo**: If already cloned inside another repo, move it out to a separate folder:
+   ```bash
+   mv inner-repo ../
+
+
 ---
 
 # Tips to Avoid These Mistakes
@@ -102,7 +114,6 @@ git reset --hard origin/main
 - Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
 - Use `git stash` when unsure instead of risking `git reset --hard`.
 - If you want to use `git reset --hard` check in which branch you are on. If you for example have uncommited changes in a local bransch do not do `git reset --hard` in that bransch. Then you lost all uncommited changes in that branch. 
-
 
 
 ---
