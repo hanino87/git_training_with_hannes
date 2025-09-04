@@ -105,7 +105,7 @@ When you fork a repository on GitHub, a copy of the original project is created 
 In short: `origin` = your fork, `upstream` = original repo.
 
 - **origin**: Points to your own fork (your copy). When you run `git push`, changes are sent here.  
-- **upstream (remote)**: Points to the original repository you forked from. Used to fetch updates from the original (`git fetch upstream` and `git merge upstream/main or simpler command with git pull <remote>` <branch>` ).
+- **upstream (remote)**: Points to the original repository you forked from. Used to fetch updates from the original (`git fetch upstream` and `git merge upstream/main or simpler command with git pull <remote> <branch> ).
 
 ```bash
 git pull class_repo main 
