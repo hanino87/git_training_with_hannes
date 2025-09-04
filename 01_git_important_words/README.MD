@@ -108,7 +108,7 @@ In short: `origin` = your fork, `upstream` = original repo.
 - **upstream (remote)**: Points to the original repository you forked from. Used to fetch updates from the original (`git fetch upstream` and `git merge upstream/main or simpler command with git pull <remote>` <branch>` ).
 
 ```bash
-git pull class_repo main
+git pull class_repo main 
 ```
 
 ## 16. Connect your fork to the upstream after forking from GitHub
