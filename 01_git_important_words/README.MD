@@ -60,8 +60,14 @@ git stash
 git stash pop  # restore later
 
 ```
+## 9. Branch
+A separate line of development. Useful for working on new features safely.
 
-## 9. git merge 
+```bash
+git checkout -b feature-branch # create and switch to a new bransch 
+git checkout main # switch to an existing branch 
+
+## 10. git merge 
 
 Combine changes from another branch into your current branch.
 
@@ -69,20 +75,14 @@ Combine changes from another branch into your current branch.
 git checkout main
 git merge feature-branch
 ```
-## 10. Fork
+## 11. Fork
 
 A personal copy of someone else’s repository to make changes safely. 
 
-## 11. repo 
+## 12. repo 
 
 Shortname for respitory 
 
-## 12. Branch
-A separate line of development. Useful for working on new features safely.
-
-```bash
-git checkout -b feature-branch # create and switch to a new bransch 
-git checkout main # switch to an existing branch 
 ```
 ## 13. SSH Key & HTTPS authentication
 
@@ -93,10 +93,11 @@ An SSH key is a cryptographic key pair used to securely connect to GitHub withou
 HTTPS is a URL scheme for Git that uses your GitHub username and password (or personal access token) for authentication each time you push or pull. It's simpler to set up but requires credentials for every operation.
 
 
-
 ## 13. Diffrence between `origin` and `remote` when you Fork
 
 When you fork a repository on GitHub, a copy of the original project is created in your own account.
+
+In short: `origin` = your fork, `upstream` = original repo.
 
 - **origin**: Points to your own fork (your copy). When you run `git push`, changes are sent here.  
 - **upstream (remote)**: Points to the original repository you forked from. Used to fetch updates from the original (`git fetch upstream` and `git merge upstream/main or simpler command with git pull <remote>` <branch>` ).
@@ -104,8 +105,6 @@ When you fork a repository on GitHub, a copy of the original project is created 
 ```bash
 git pull class_repo main
 ```
-
-In short: `origin` = your fork, `upstream` = original repo.
 
 ## 14. Connect your fork to the upstream after forking from GitHub
 
@@ -122,7 +121,7 @@ After forking a repository on GitHub, you can connect your local fork to the ori
 
 git remote add <remote> https://github.com/ORIGINAL_OWNER/REPO_NAME.git # without ssh-key 
 
-git remote add upstream git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-key
+git remote add <remote> git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-key
 
 3. **Get the latest update from the original repo to your local fork repo**: 
 
