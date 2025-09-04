@@ -64,7 +64,7 @@ git stash
 git stash pop  # restore later
 
 ```
-## 10. Create and change branch 
+## 10. `Create and change branch`
 
 ```bash
 git checkout -b feature-branch # create and switch to a new bransch 
