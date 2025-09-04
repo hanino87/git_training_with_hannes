@@ -64,6 +64,7 @@ git push origin your-branch
 
 👉 The other files remain uncommitted in your working directory.
 
+---
 
 ## 4. Merge conflict between local `main` and remote `main` (branches have diverged)
 This happens when both your local `main` and the remote `main` have commits that the other doesn’t.  
@@ -78,6 +79,9 @@ git reset --hard origin/main
 
 👉 Once resolved, you can safely switch branches locally.
 
+---
+
+
 ## 5. Mistake: Cloning a Git or fork a repository inside another Git repository
 
 If you accidentally run `git clone` inside an existing Git repository, you end up with a nested Git repository. This can cause confusion with version control, because Git will see the inner repo as a subdirectory but not automatically track it properly.
@@ -90,7 +94,12 @@ If you accidentally run `git clone` inside an existing Git repository, you end u
    rm -rf path/to/nested-repo
 
 ---
+## 6. Start the day with git pull in main branch.
 
-
+```bash
+git branch 
+git checkout main
+git pull / git pull classrepo main
+```
 
 ---
