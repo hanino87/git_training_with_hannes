@@ -86,30 +86,11 @@ git push origin your-branch
 This happens when both your local `main` and the remote `main` have commits that the other doesn’t.  
 Git will stop you from switching branches until the conflict is resolved.
 
-**Solution 1 – If you want your local `main` to exactly match remote:**
+**Solution If you want your local `main` to exactly match remote:**
 ```bash
 git fetch origin
 git checkout main
 git reset --hard origin/main
-```
-
-**Solution 2 – If you want to merge changes:**
-```bash
-git fetch origin
-git checkout main
-git merge origin/main
-# Resolve conflicts manually in your editor
-git add <conflicted-files>
-git commit
-```
-
-**Solution 3 – If you want to rebase your changes on top of remote:**
-```bash
-git fetch origin
-git checkout main
-git rebase origin/main
-# Resolve conflicts if prompted, then continue rebase
-git rebase --continue
 ```
 
 👉 Once resolved, you can safely switch branches locally.
