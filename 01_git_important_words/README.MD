@@ -67,6 +67,8 @@ A separate line of development. Useful for working on new features safely.
 git checkout -b feature-branch # create and switch to a new bransch 
 git checkout main # switch to an existing branch 
 
+```
+
 ## 10. git merge 
 
 Combine changes from another branch into your current branch.
