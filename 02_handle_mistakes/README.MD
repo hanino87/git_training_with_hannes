@@ -10,14 +10,12 @@ Here are some common mistakes and how to solve them.
 - Use `git stash` when unsure of you want saving changes or not. 
 - Checkt which branch you are in always. 
 
-bash```
+```bash
 
 git branch 
 
 ```
 
-
----
 
 ---
 
