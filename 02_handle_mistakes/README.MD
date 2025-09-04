@@ -15,8 +15,6 @@ Here are some common mistakes and how to solve them.
 git branch 
 
 ```
-
-
 ---
 
 ## 2. You made changes in the wrong branch and want to discard uncommitted changes to switch branches
@@ -95,6 +93,6 @@ If you accidentally run `git clone` inside an existing Git repository, you end u
 # Tips to Avoid These Mistakes
 - Run `git status` often to check where you are.  
 - Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
-- Use `git stash` when unsure of you want saving changes or not. 
+- Use `git stash` when unsure of what you want to change in your current branch. 
 
 ---
