@@ -5,12 +5,12 @@ This guide explains essential Git commands and concepts in simple terms.
 ---
 
 ## 1. `Remote`
-A repository hosted online (GitHub, GitLab, etc.) connected to your local repo.
+A repository hosted online (GitHub, GitLab, etc.) connected to your local repository.
 
 ## 2. `Local`
 Your repository copy on your own computer.
 
-## 3. `git clone`
+## 3. `Git clone`
 Create a copy of a remote repository on your computer.
 
 ```bash
@@ -22,14 +22,14 @@ git clone <repository-url>
 A separate line of development. Useful for working on new features safely.
 
 
-## 5. `git pull`
+## 5. `Git pull`
 Update your local branch with the latest changes from the remote main bransch.
 
 ```bash
 git pull origin main
 
 ```
-## 6. `git add`
+## 6. `Git add`
 Stage changes (new or modified files) for the next commit.
 
 ```bash
@@ -37,7 +37,7 @@ git add <file>
 git add .   # stage all changes in the directory you stand in the terminal 
 
 ```
-## 7. `git commit`
+## 7. `Git commit`
 Save staged changes to your local repository with a message.
 
 ```bash
@@ -45,7 +45,7 @@ git commit -m "Describe your changes"
 
 ```
 
-## 8. `git push`
+## 8. `Git push`
 
 Send your local commits to the remote repository
 
@@ -54,7 +54,7 @@ git push origin main
 
 ```
 
-## 9. `git stash`
+## 9. `Git stash`
 
 Temporarily save uncommitted changes to switch tasks safely. 
 
@@ -70,7 +70,7 @@ git checkout main # switch to an existing branch
 
 ```
 
-## 10. `git merge`
+## 10. `Git merge`
 
 Combine changes from another branch into your current branch.
 
@@ -82,7 +82,7 @@ git merge feature-branch
 
 A personal copy of someone else’s repository to make changes safely. 
 
-## 12. `repo`
+## 12. `Repo`
 
 Shortname for respitory 
 
