@@ -8,7 +8,7 @@ Here are some common mistakes and how to solve them.
 - Run `git status` often to check where you are.  
 - Always work in feature branches (`feature/...`, `bugfix/...`) or local branch instead of directly in `main`.  
 - Use `git stash` when unsure of you want saving changes or not. 
-- Checkt which branch you are in always to avoid that you are in wrong bracnh 
+- Check which branch you are in always to avoid that you are in wrong branch 
 - Always when you start working do git pull in your local main branch to allways be in sync to the remote main branch. 
 
 ```bash
