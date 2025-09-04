@@ -108,11 +108,11 @@ After forking a repository on GitHub, you can connect your local fork to the ori
    git remote -v
    ```
 
-2. ## Add the upstream remote (the original repository):
+2. **Add the upstream remote (the original repository):
 
 git remote add <remote> https://github.com/ORIGINAL_OWNER/REPO_NAME.git
 
-3. ## Get the latest update from the original repo to your local fork repo 
+3. **Get the latest update from the original repo to your local fork repo 
 
  ```bash
 git pull <remote> main
