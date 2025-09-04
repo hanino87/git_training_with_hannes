@@ -18,7 +18,7 @@ git clone <repository-url>
 
 ```
 
-## 4. 'Branch'
+## 4. `Branch`
 A separate line of development. Useful for working on new features safely.
 
 
@@ -131,4 +131,9 @@ git remote add <remote> git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-k
  ```bash
 git pull <remote> main
  ```
+## 16. Pull request 
 
+Pull Requests
+A Pull Request (PR) is a way to propose changes to a project.
+
+When you create a PR, you’re asking the project maintainers to review and merge your code into the main branch
