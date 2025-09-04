@@ -84,6 +84,16 @@ A separate line of development. Useful for working on new features safely.
 git checkout -b feature-branch # create and switch to a new bransch 
 git checkout main # switch to an existing branch 
 ```
+## 13. SSH Key & HTTPS authentication
+
+### SSH Key
+An SSH key is a cryptographic key pair used to securely connect to GitHub without entering your username and password every time. It allows Git to authenticate you automatically.
+
+### HTTPS
+HTTPS is a URL scheme for Git that uses your GitHub username and password (or personal access token) for authentication each time you push or pull. It's simpler to set up but requires credentials for every operation.
+
+
+
 ## 13. Diffrence between `origin` and `remote` when you Fork
 
 When you fork a repository on GitHub, a copy of the original project is created in your own account.
