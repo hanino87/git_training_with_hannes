@@ -72,7 +72,7 @@ git checkout main # switch to an existing branch
 
 ```
 
-## 10. `Git merge`
+## 11. `Git merge`
 
 Combine changes from another branch into your current branch.
 
@@ -80,16 +80,16 @@ Combine changes from another branch into your current branch.
 git checkout main
 git merge feature-branch
 ```
-## 11. `Fork`
+## 12. `Fork`
 
 A personal copy of someone else’s repository to make changes safely. 
 
-## 12. `Repo`
+## 13. `Repo`
 
 Shortname for respitory 
 
 
-## 13. SSH Key & HTTPS authentication
+## 14. SSH Key & HTTPS authentication
 
 ### SSH Key
 An SSH key is a cryptographic key pair used to securely connect to GitHub without entering your username and password every time. It allows Git to authenticate you automatically.
@@ -98,7 +98,7 @@ An SSH key is a cryptographic key pair used to securely connect to GitHub withou
 HTTPS is a URL scheme for Git that uses your GitHub username and password (or personal access token) for authentication each time you push or pull. It's simpler to set up but requires credentials for every operation.
 
 
-## 14. Diffrence between `origin` and `remote` when you Fork
+## 15. Diffrence between `origin` and `remote` when you Fork
 
 When you fork a repository on GitHub, a copy of the original project is created in your own account.
 
@@ -111,7 +111,7 @@ In short: `origin` = your fork, `upstream` = original repo.
 git pull class_repo main
 ```
 
-## 15. Connect your fork to the upstream after forking from GitHub
+## 16. Connect your fork to the upstream after forking from GitHub
 
 After forking a repository on GitHub, you can connect your local fork to the original repository (upstream) to keep it up to date.
 
@@ -133,7 +133,7 @@ git remote add <remote> git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-k
  ```bash
 git pull <remote> main
  ```
-## 16. Pull request 
+## 17. Pull request 
 
 Pull Requests
 A Pull Request (PR) is a way to propose changes to a project.
