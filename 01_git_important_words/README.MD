@@ -4,10 +4,10 @@ This guide explains essential Git commands and concepts in simple terms.
 
 ---
 
-## 1. Remote
+## 1. `Remote`
 A repository hosted online (GitHub, GitLab, etc.) connected to your local repo.
 
-## 2. Local 
+## 2. `Local`
 Your repository copy on your own computer.
 
 ## 3. `git clone`
@@ -18,14 +18,18 @@ git clone <repository-url>
 
 ```
 
-## 4. `git pull`
+## 4. 'Branch'
+A separate line of development. Useful for working on new features safely.
+
+
+## 5. `git pull`
 Update your local branch with the latest changes from the remote main bransch.
 
 ```bash
 git pull origin main
 
 ```
-## 5. git add
+## 6. `git add`
 Stage changes (new or modified files) for the next commit.
 
 ```bash
@@ -33,7 +37,7 @@ git add <file>
 git add .   # stage all changes in the directory you stand in the terminal 
 
 ```
-## 6. git commit
+## 7. `git commit`
 Save staged changes to your local repository with a message.
 
 ```bash
@@ -41,7 +45,7 @@ git commit -m "Describe your changes"
 
 ```
 
-## 7. git push 
+## 8. `git push`
 
 Send your local commits to the remote repository
 
@@ -50,7 +54,7 @@ git push origin main
 
 ```
 
-## 8. git stash 
+## 9. `git stash`
 
 Temporarily save uncommitted changes to switch tasks safely. 
 
@@ -60,16 +64,13 @@ git stash
 git stash pop  # restore later
 
 ```
-## 9. Branch
-A separate line of development. Useful for working on new features safely.
-
 ```bash
 git checkout -b feature-branch # create and switch to a new bransch 
 git checkout main # switch to an existing branch 
 
 ```
 
-## 10. git merge 
+## 10. `git merge`
 
 Combine changes from another branch into your current branch.
 
@@ -77,11 +78,11 @@ Combine changes from another branch into your current branch.
 git checkout main
 git merge feature-branch
 ```
-## 11. Fork
+## 11. `Fork`
 
 A personal copy of someone else’s repository to make changes safely. 
 
-## 12. repo 
+## 12. `repo`
 
 Shortname for respitory 
 
@@ -95,7 +96,7 @@ An SSH key is a cryptographic key pair used to securely connect to GitHub withou
 HTTPS is a URL scheme for Git that uses your GitHub username and password (or personal access token) for authentication each time you push or pull. It's simpler to set up but requires credentials for every operation.
 
 
-## 13. Diffrence between `origin` and `remote` when you Fork
+## 14. Diffrence between `origin` and `remote` when you Fork
 
 When you fork a repository on GitHub, a copy of the original project is created in your own account.
 
@@ -108,7 +109,7 @@ In short: `origin` = your fork, `upstream` = original repo.
 git pull class_repo main
 ```
 
-## 14. Connect your fork to the upstream after forking from GitHub
+## 15. Connect your fork to the upstream after forking from GitHub
 
 After forking a repository on GitHub, you can connect your local fork to the original repository (upstream) to keep it up to date.
 
