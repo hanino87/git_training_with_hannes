@@ -97,3 +97,24 @@ git pull class_repo main
 
 In short: `origin` = your fork, `upstream` = original repo.
 
+## 14. Connect your fork to the upstream after forking from GitHub
+
+After forking a repository on GitHub, you can connect your local fork to the original repository (upstream) to keep it up to date.
+
+### Steps:
+
+1. **Check current remotes**:
+   ```bash
+   git remote -v
+   ```
+
+2. ## Add the upstream remote (the original repository):
+
+git remote add <remote> https://github.com/ORIGINAL_OWNER/REPO_NAME.git
+
+3. ## Get the latest update from the original repo to your local fork repo 
+
+ ```bash
+git pull <remote> main
+ ```
+
