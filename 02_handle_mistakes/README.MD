@@ -5,35 +5,12 @@ Here are some common mistakes and how to solve them.
 
 ---
 
-## 1. You committed a file but accidentally ran `git reset --hard` and want to recover it
-When you run `git reset --hard`, your working directory and staging area are reset.  
-But Git usually still has the history in the **reflog**.
-
-**Solution:**
-```bash
-# Show recent commits (even "lost" ones)
-git reflog
-
-# Find the commit hash before the reset
-git checkout <commit-hash>
-
-# Create a new branch or cherry-pick the file
-git checkout -b recovered-branch <commit-hash>
-```
-👉 You can then copy the file back to your current branch.
-
 ---
 
 ## 2. You made changes in the wrong branch and want to discard uncommitted changes to switch branches
 Git won’t let you switch branches if you have uncommitted changes.
 
-**Solution 1 – throw changes away completely:**
-```bash
-git reset --hard
-git clean -fd
-```
-
-**Solution 2 – save changes temporarily:**
+**Solution save changes temporarily:**
 ```bash
 git stash
 git checkout correct-branch
@@ -49,11 +26,6 @@ Different cases depending on whether you pushed or not:
 - **Undo last commit but keep changes locally:**
 ```bash
 git reset --soft HEAD~1
-```
-
-- **Undo last commit and also discard changes:**
-```bash
-git reset --hard HEAD~1
 ```
 
 - **If already pushed but want to remove commit:**
