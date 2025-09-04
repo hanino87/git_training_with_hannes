@@ -124,9 +124,9 @@ After forking a repository on GitHub, you can connect your local fork to the ori
 
 2. **Add the upstream remote (the original repository)**:
 
-git remote add <remote> https://github.com/ORIGINAL_OWNER/REPO_NAME.git # without ssh-key 
+git remote add remote https://github.com/ORIGINAL_OWNER/REPO_NAME.git # without ssh-key 
 
-git remote add <remote> git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-key
+git remote add remote git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-key
 
 3. **Get the latest update from the original repo to your local fork repo**: 
 
