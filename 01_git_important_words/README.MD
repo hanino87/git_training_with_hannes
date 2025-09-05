@@ -139,3 +139,8 @@ Pull Requests
 A Pull Request (PR) is a way to propose changes to a project.
 
 When you create a PR, you’re asking the project maintainers to review and merge your code into the main branch
+
+## 18. Git Ignore 
+
+A file that stops the files/folders you don`t want to push to remote on GitHub 
+
