@@ -50,7 +50,7 @@ git revert <commit-hash>
 ## 3. You have 1000+ changed files but only want to commit 3 specific ones to GitHub
 You can stage and commit only the files you want.
 
-**Solution:**
+**1Solution:**
 ```bash
 # Stage only the files you need
 git add file1.txt file2.js file3.md
@@ -61,6 +61,24 @@ git commit -m "Commit only 3 files"
 # Push to remote
 git push origin your-branch
 ```
+**2Solution:**
+
+Implement files that shall not go to the remote repo in the gitignore file. 
+
+```bash
+
+# Stage only the files you need
+git add file1.txt file2.js file3.md
+
+# Commit only those
+git commit -m "Commit only 3 files"
+
+# Push to remote
+git push origin your-branch
+```
+
+```
+
 
 👉 The other files remain uncommitted in your working directory.
 
