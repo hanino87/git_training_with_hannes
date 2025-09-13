@@ -131,7 +131,7 @@ git remote add upstream git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-k
 3. **Get the latest update from the original repo to your local fork repo**: 
 
  ```bash
-git pull <remote> main
+git pull upstream main
  ```
 ## 17. Pull request 
 
