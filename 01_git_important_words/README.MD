@@ -130,11 +130,25 @@ git remote add upstream git@github.com:ORIGINAL_OWNER/REPO_NAME.git # with ssh-k
 
 You can find the url for the original repo if you go to the repo and then go to the copyboard as if you shall copy the url when you clone a repo. 
 
-3. **Get the latest update from the original repo to your local fork repo**: 
+3. **Get the latest update from the original repo main to your local fork repo**: 
 
  ```bash
 git pull upstream main
  ```
+
+4. ** To get the other branches from the original repo to your fork you have to running following command:
+
+ ```bash
+    git fetch --all
+ ```
+5. These branches exist on your fork (origin) but are not yet local branches you have to create them first. 
+
+```bash
+git checkout -b 02_04b origin/02_04b
+```
+You check out the new branch but use same name but have origin. 
+You are on branch 02_04b and It’s local and tracks origin/02_04b
+
 ## 17. Pull request 
 
 Pull Requests
