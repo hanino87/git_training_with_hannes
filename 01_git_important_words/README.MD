@@ -136,12 +136,12 @@ You can find the url for the original repo if you go to the repo and then go to 
 git pull upstream main
  ```
 
-4. ** To get the other branches from the original repo to your fork you have to running following command:
+4. **To get the other branches from the upstream repo (orginal repo) to your lcoal fork on you have to running following command:
 
  ```bash
     git fetch --all
  ```
-5. These branches exist on your fork (origin) but are not yet local branches you have to create them first. 
+5. These remote branches exist now on your fork (origin) locally but are not yet local branches you have to create them first locally. 
 
 ```bash
 git checkout -b 02_04b origin/02_04b
